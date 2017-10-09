@@ -27,7 +27,11 @@ namespace SeleniumFirst.TestCases
             verificationErrors = new StringBuilder();
         }
         [Test]
-       
+       // public static void main(String[] arg)
+        //{
+
+ //       }
+             
              public void  ExecuteTest()
             {
 
@@ -44,14 +48,14 @@ namespace SeleniumFirst.TestCases
                         PropertiesCollection.driver.FindElement(By.Name("UserName")).SendKeys(ObjDictRowData["UserName"]);
                         PropertiesCollection.driver.FindElement(By.Name("Password")).Clear();
 
-                    PropertiesCollection.driver.FindElement(By.Name("Password")).SendKeys(ObjDictRowData["Password"]);
+                        PropertiesCollection.driver.FindElement(By.Name("Password")).SendKeys(ObjDictRowData["Password"]);
                         PropertiesCollection.driver.FindElement(By.ClassName("btn")).Click();
                         Thread.Sleep(2000);
                         //IWebElement ValidationMsg1 = PropertiesCollection.driver.FindElement(By.XPath("//li[contains(text(),'The user name or password provided is incorrect.')]"));
                         //IWebElement ValidationMsg2 = PropertiesCollection.wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//span[@class='field-validation-error']")));
                         //Assert.IsTrue(ValidationMsg1.Displayed);
                         //continue;
-                        
+
                         bool found = false;
                         try
                         {
@@ -87,8 +91,8 @@ namespace SeleniumFirst.TestCases
                         break;
                     }
                 }
-            
-        }
+            }    
+        
         [TearDown]
         public void CleanUp()
         {
