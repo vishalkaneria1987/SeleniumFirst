@@ -27,11 +27,11 @@ namespace SeleniumFirst.TestCases
             verificationErrors = new StringBuilder();
         }
         [Test]
-       // public static void main(String[] arg)
+       public static void Main(String[] arg)
         
- //       }
+
              
-             public void  ExecuteTest()
+            // public void  ExecuteTest() //
             {
 
 
