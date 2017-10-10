@@ -35,7 +35,7 @@ namespace SeleniumFirst.TestCases
             {
 
 
-                ExcelUtilities objExcelUtils = new ExcelUtilities("D:\\Data.xlsx", "LoginData");
+                ExcelUtilities objExcelUtils = new ExcelUtilities("C:/Project/SeleniumFirst/Data.xlsx", "LoginData");
                 Dictionary<string, Dictionary<string, string>> ObjDictSheetData = objExcelUtils.ReadExcelSheetData();
                 for (int rowIndex = 1; rowIndex <= ObjDictSheetData.Count; rowIndex++)
                 {
